@@ -1,0 +1,123 @@
+[00:00:02.326] Server  LOG     ✓ Ready in 1605ms
+[00:00:05.959] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           cz-shortcut-listen="true"
+-                           __processed_2160d130-1193-42e0-819d-51a54e6430f9__="true"
+                          >
+                            ...
+                              <div className="w-full md:...">
+                                <div className="w-full max...">
+                                  <h2>
+                                  <p>
+                                  <form className="space-y-4" onSubmit={function handleSubmit}>
+                                    <div>
+                                      <label>
+                                      <input
+                                        type="email"
+                                        placeholder="Enter email"
+                                        name="email"
+                                        value=""
+                                        onChange={function handleChange}
+                                        className="w-full mt-1 px-4 py-3 border rounded-lg focus:outline-none focus:ri..."
+-                                       fdprocessedid="xku82h"
+                                      >
+                                    <div>
+                                      <label>
+                                      <input
+                                        type="password"
+                                        placeholder="Enter password"
+                                        name="password"
+                                        value=""
+                                        onChange={function handleChange}
+                                        className="w-full mt-1 px-4 py-3 border rounded-lg focus:outline-none focus:ri..."
+-                                       fdprocessedid="no8xzt"
+                                      >
+                                    <button
+                                      type="submit"
+                                      className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 trans..."
+-                                     fdprocessedid="f1ir2c"
+                                    >
++                                     Login
+                                  ...
+                  ...
+
+[00:00:09.751] Browser LOG     Login successful: {"message":"Login successful","user":{"email":"rohamamajeed313@gmail.com","id":1,"name":"Rohama Majeed","role":"STUDENT"}}
+[00:00:11.297] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/Dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable"
+                        >
+                          <body
+-                           __processed_3d4f9548-c442-4c07-9f8f-238ca5b85aec__="true"
+-                           className="h-screen overflow-hidden bg-background text-foreground"
+                          >
+                            ...
+                              <SegmentViewNode type="layout" pagePath="Dashboard/...">
+                                <SegmentTrieNode>
+                                <link>
+                                <script>
+                                <script>
+                                <script>
+                                <DashboardLayout>
+                                  <html lang="en" className="geist_a715...">
+                                    <body
+                                      className="h-screen overflow-hidden bg-background text-foreground"
+-                                     __processed_3d4f9548-c442-4c07-9f8f-238ca5b85aec__="true"
+                                    >
+                  ...
+
