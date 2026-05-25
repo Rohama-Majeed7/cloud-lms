@@ -1,5 +1,6 @@
-[00:00:02.326] Server  LOG     ✓ Ready in 1605ms
-[00:00:05.959] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:05.143] Server  LOG     ✓ Ready in 4.4s
+[00:00:08.226] Server  LOG     ○ Compiling /login ...
+[00:00:16.683] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -25,12 +26,15 @@ It can also happen if the client has a browser extension installed which messes 
                     <SegmentViewNode type="layout" pagePath="layout.tsx">
                       <SegmentTrieNode>
                       <link>
-                      <script>
                       <RootLayout>
-                        <html lang="en">
+                        <html
+                          lang="en"
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
+                        >
                           <body
+-                           __processed_d2cb6586-18bb-456f-90c4-e291a0f6a6ec__="true"
 -                           cz-shortcut-listen="true"
--                           __processed_2160d130-1193-42e0-819d-51a54e6430f9__="true"
                           >
                             ...
                               <div className="w-full md:...">
@@ -47,7 +51,7 @@ It can also happen if the client has a browser extension installed which messes 
                                         value=""
                                         onChange={function handleChange}
                                         className="w-full mt-1 px-4 py-3 border rounded-lg focus:outline-none focus:ri..."
--                                       fdprocessedid="xku82h"
+-                                       fdprocessedid="619ou9"
                                       >
                                     <div>
                                       <label>
@@ -58,19 +62,20 @@ It can also happen if the client has a browser extension installed which messes 
                                         value=""
                                         onChange={function handleChange}
                                         className="w-full mt-1 px-4 py-3 border rounded-lg focus:outline-none focus:ri..."
--                                       fdprocessedid="no8xzt"
+-                                       fdprocessedid="plwsk9"
                                       >
                                     <button
                                       type="submit"
                                       className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 trans..."
--                                     fdprocessedid="f1ir2c"
+-                                     fdprocessedid="muxap"
                                     >
 +                                     Login
                                   ...
                   ...
 
-[00:00:09.751] Browser LOG     Login successful: {"message":"Login successful","user":{"email":"rohamamajeed313@gmail.com","id":1,"name":"Rohama Majeed","role":"STUDENT"}}
-[00:00:11.297] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:22.327] Browser LOG     Login successful: {"message":"Login successful","user":{"email":"rohamamajeed313@gmail.com","id":1,"name":"Rohama Majeed","role":"STUDENT"}}
+[00:00:26.153] Server  WARN    ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:00:33.699] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -96,28 +101,50 @@ It can also happen if the client has a browser extension installed which messes 
                     <SegmentViewNode type="layout" pagePath="layout.tsx">
                       <SegmentTrieNode>
                       <link>
-                      <script>
                       <RootLayout>
                         <html
                           lang="en"
--                         className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable"
+-                         className="__variable_246ccd __variable_4c40f6"
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
                         >
                           <body
--                           __processed_3d4f9548-c442-4c07-9f8f-238ca5b85aec__="true"
+-                           __processed_b35ac970-6826-423c-a65e-3cc34a53b2c0__="true"
 -                           className="h-screen overflow-hidden bg-background text-foreground"
+-                           cz-shortcut-listen="true"
                           >
                             ...
                               <SegmentViewNode type="layout" pagePath="Dashboard/...">
                                 <SegmentTrieNode>
                                 <link>
-                                <script>
-                                <script>
-                                <script>
                                 <DashboardLayout>
-                                  <html lang="en" className="geist_a715...">
+                                  <html
+                                    lang="en"
+                                    className="__variable_246ccd __variable_4c40f6"
+-                                   suppresshydrationwarning="true"
+-                                   data-qb-installed="true"
+                                  >
                                     <body
                                       className="h-screen overflow-hidden bg-background text-foreground"
--                                     __processed_3d4f9548-c442-4c07-9f8f-238ca5b85aec__="true"
+-                                     __processed_b35ac970-6826-423c-a65e-3cc34a53b2c0__="true"
+-                                     cz-shortcut-listen="true"
                                     >
+                                      ...
+                                        <Navbar>
+                                          <header className="bg-white b...">
+                                            <h2>
+                                            <div className="flex items...">
+                                              <input
+                                                placeholder="Search courses..."
+                                                className="hidden md:block border text-gray-600 border-gray-600 rounde..."
+-                                               fdprocessedid="mp75e"
+                                              >
+                                              <button
+                                                onClick={function handleLogout}
+                                                className="bg-red-500 cursor-pointer hover:bg-red-600 text-white px-3 ..."
+-                                               fdprocessedid="n4tf6"
+                                              >
++                                               Logout
+                                              ...
                   ...
 
